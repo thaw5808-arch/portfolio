@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bendux — case study · Tim, UI/UX Designer</title>
+<meta name="description" content="How I designed Bendux, a fashion store with a 3D hero and a fully data-driven catalogue.">
+<meta name="theme-color" content="#E6EFEA">
+<meta property="og:title" content="Bendux — case study by Tim">
+<meta property="og:description" content="How I designed Bendux, a fashion store with a 3D hero and a fully data-driven catalogue.">
+<meta property="og:image" content="https://thaw5808-arch.github.io/portfolio/assets/img/bendux.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="t-bendux" data-base="t-bendux">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../#work"><span aria-hidden="true">←</span><span>All work <small>· 05 / 05</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../#about" class="hide-sm">About</a>
+      <a href="../assets/Tim-Thaw-Zin-Htut-UIUX-Resume.pdf" class="hide-sm">Résumé</a>
+      <a class="pill sm" href="mailto:timwinchester16@gmail.com">Hire me</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <section class="cs-hero">
+    <p class="kicker">Case study — Fashion e-commerce</p>
+    <h1 class="display">Bendux</h1>
+    <p class="cs-summary">Fashion stores need to feel distinctive, not like a template — while still running on real inventory.</p>
+    <div class="cs-meta">
+      <div><h2>Role</h2><p>Visual design, motion, full-stack build</p></div>
+      <div><h2>Tools</h2><p>Figma, Next.js 15, Three.js</p></div>
+      <div><h2>Platform</h2><p>Web — store and admin</p></div>
+      <div><h2>Links</h2><p><a href="https://bendux-fullstack.vercel.app">Live</a> · <a href="https://github.com/thaw5808-arch/bendux-fullstack">Code</a></p></div>
+    </div>
+  </section>
+  <section class="cs-media"><a class="frame reveal" href="https://bendux-fullstack.vercel.app" style="display:block">
+    <span class="frame-bar"><span>bendux-fullstack.vercel.app</span><span>Open live site ↗</span></span>
+    <img src="../assets/img/bendux.jpg" alt="Bendux home page" width="1000" height="625">
+  </a></section>
+
+  <section class="cs-split" aria-label="Problem and constraints">
+    <div class="reveal"><p class="kicker">The problem</p><p class="big">Most fashion storefronts look interchangeable. A store needs its own character, but the visuals can’t get in the way of browsing and buying.</p></div>
+    <div class="reveal"><p class="kicker">What made it hard</p><ul><li>Stand out without slowing the page down</li><li>Sales and filters change, so nothing can be hard-coded</li><li>Admins need to manage stock and photos easily</li><li>Motion must stay decoration, never block the content</li></ul></div>
+  </section>
+  <section aria-labelledby="dec"><p class="kicker" id="dec">Three decisions</p>
+  <div class="grid decisions-grid" style="padding-top:24px">
+    <article class="card reveal"><p class="step-no" aria-hidden="true">01</p><h3>A 3D hero with a job to do</h3><p>A Three.js scene with a morphing blob and floating particles gives Bendux its identity in the first second — then gets out of the way of the products.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">02</p><h3>Merchandising driven by data</h3><p>Flash sales and brand filters are pulled live from the database, so the store can change its offers without anyone touching the design.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">03</p><h3>An admin side that respects the admin</h3><p>Inventory management with signed Cloudinary uploads lets the team add products and photos safely, in the same visual language as the store.</p></article>
+  </div>
+  </section>
+  <section aria-label="Proof" style="padding-top:clamp(56px,8vw,112px)"><div class="proof reveal">
+    <div><p class="num">3D</p><p>Three.js hero scene</p></div>
+    <div><p class="num">Live</p><p>flash sales and brand filters from the database</p></div>
+    <div><p class="num">Signed</p><p>Cloudinary uploads in the admin panel</p></div>
+    <div><p class="num">Stripe</p><p>checkout</p></div>
+  </div></section>
+  <section class="cs-split" aria-label="Stack and learnings">
+    <div class="reveal"><p class="kicker">What I learned</p><p>Motion earns its place only when it says something about the brand. The 3D hero is Bendux’s signature, so everything else on the page stays simple.</p></div>
+    <div class="reveal"><p class="kicker">Built with</p><ul class="stack"><li>Figma</li><li>Next.js 15</li><li>Prisma</li><li>Three.js</li><li>Stripe</li><li>Redis</li><li>Cloudinary</li></ul></div>
+  </section>
+
+  <a class="next" href="adore.html"><span class="kicker" style="margin:0">Next case study</span><span class="display">ADORÉ <span class="arrow" aria-hidden="true">→</span></span></a>
+  <p class="footnote">Tim · <a href="mailto:timwinchester16@gmail.com">timwinchester16@gmail.com</a> · <a href="https://github.com/thaw5808-arch">GitHub</a> · <a href="https://www.linkedin.com/in/thaw-zin-04751b3ba/">LinkedIn</a></p>
+</div>
+</main>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

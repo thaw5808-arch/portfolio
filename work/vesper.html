@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vesper — case study · Tim, UI/UX Designer</title>
+<meta name="description" content="How I designed Vesper, a luxury store with a design system first and real, secure checkout.">
+<meta name="theme-color" content="#2A1517">
+<meta property="og:title" content="Vesper — case study by Tim">
+<meta property="og:description" content="How I designed Vesper, a luxury store with a design system first and real, secure checkout.">
+<meta property="og:image" content="https://thaw5808-arch.github.io/portfolio/assets/img/vesper.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="t-vesper" data-base="t-vesper">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../#work"><span aria-hidden="true">←</span><span>All work <small>· 04 / 05</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../#about" class="hide-sm">About</a>
+      <a href="../assets/Tim-Thaw-Zin-Htut-UIUX-Resume.pdf" class="hide-sm">Résumé</a>
+      <a class="pill sm" href="mailto:timwinchester16@gmail.com">Hire me</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <section class="cs-hero">
+    <p class="kicker">Case study — Luxury e-commerce</p>
+    <h1 class="display">Vesper</h1>
+    <p class="cs-summary">Luxury e-commerce has to feel premium and still handle real payments safely. Most student projects fake one or the other.</p>
+    <div class="cs-meta">
+      <div><h2>Role</h2><p>Design system, UI design, full-stack build</p></div>
+      <div><h2>Tools</h2><p>Figma, Next.js 15, TypeScript, Stripe</p></div>
+      <div><h2>Platform</h2><p>Web — shop and admin panel</p></div>
+      <div><h2>Links</h2><p><a href="https://luxe-fullstack-gamma.vercel.app">Live</a> · <a href="https://github.com/thaw5808-arch/luxe-fullstack">Code</a></p></div>
+    </div>
+  </section>
+  <section class="cs-media"><a class="frame reveal" href="https://luxe-fullstack-gamma.vercel.app" style="display:block">
+    <span class="frame-bar"><span>luxe-fullstack-gamma.vercel.app</span><span>Open live site ↗</span></span>
+    <img src="../assets/img/vesper.jpg" alt="Vesper home page" width="1000" height="625">
+  </a></section>
+
+  <section class="cs-split" aria-label="Problem and constraints">
+    <div class="reveal"><p class="kicker">The problem</p><p class="big">Online luxury stores need to feel calm and expensive, but checkout and accounts still have to be secure and reliable — the feeling breaks the moment something goes wrong.</p></div>
+    <div class="reveal"><p class="kicker">What made it hard</p><ul><li>A shop and an admin panel that must feel like one product</li><li>Real payments with Stripe, not a fake checkout</li><li>Google sign-in and email accounts living side by side</li><li>Premium means restraint: few colours, lots of space</li></ul></div>
+  </section>
+  <section aria-labelledby="dec"><p class="kicker" id="dec">Three decisions</p>
+  <div class="grid decisions-grid" style="padding-top:24px">
+    <article class="card reveal"><p class="step-no" aria-hidden="true">01</p><h3>Design system before any page</h3><p>I defined Vesper’s colours, type and components first, so every shop page and every admin screen is built from the same parts and feels the same.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">02</p><h3>Quiet, editorial storefront</h3><p>A serif headline — “Objects made to outlast trend.” — strong photography and a single clear action. The design steps back so the product can lead.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">03</p><h3>Security is part of the experience</h3><p>I found and fixed a session-merge flaw that could have given a Google sign-in user admin access, and added rate limiting to login. Trust is a UX feature.</p></article>
+  </div>
+  </section>
+  <section aria-label="Proof" style="padding-top:clamp(56px,8vw,112px)"><div class="proof reveal">
+    <div><p class="num">1</p><p>design system shared by shop and admin</p></div>
+    <div><p class="num">Stripe</p><p>checkout with verified webhooks</p></div>
+    <div><p class="num">OAuth</p><p>Google sign-in, with the session bug fixed</p></div>
+    <div><p class="num">Rate-limited</p><p>login, backed by Redis</p></div>
+  </div></section>
+  <section class="cs-split" aria-label="Stack and learnings">
+    <div class="reveal"><p class="kicker">What I learned</p><p>A design system is what lets one person keep a big product consistent. Doing it first felt slow, but every page after it was faster — and the admin panel didn’t become an afterthought.</p></div>
+    <div class="reveal"><p class="kicker">Built with</p><ul class="stack"><li>Figma</li><li>Next.js 15</li><li>TypeScript</li><li>Prisma</li><li>Stripe</li><li>Redis</li><li>Cloudinary</li><li>Google OAuth</li></ul></div>
+  </section>
+
+  <a class="next" href="bendux.html"><span class="kicker" style="margin:0">Next case study</span><span class="display">Bendux <span class="arrow" aria-hidden="true">→</span></span></a>
+  <p class="footnote">Tim · <a href="mailto:timwinchester16@gmail.com">timwinchester16@gmail.com</a> · <a href="https://github.com/thaw5808-arch">GitHub</a> · <a href="https://www.linkedin.com/in/thaw-zin-04751b3ba/">LinkedIn</a></p>
+</div>
+</main>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

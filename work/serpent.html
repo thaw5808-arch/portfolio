@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serpent — case study · Tim, UI/UX Designer</title>
+<meta name="description" content="How I designed Serpent, a snake ID app built for people who may have just been bitten.">
+<meta name="theme-color" content="#12160E">
+<meta property="og:title" content="Serpent — case study by Tim">
+<meta property="og:description" content="How I designed Serpent, a snake ID app built for people who may have just been bitten.">
+<meta property="og:image" content="https://thaw5808-arch.github.io/portfolio/assets/img/serpent.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="t-serpent" data-base="t-serpent">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../#work"><span aria-hidden="true">←</span><span>All work <small>· 02 / 05</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../#about" class="hide-sm">About</a>
+      <a href="../assets/Tim-Thaw-Zin-Htut-UIUX-Resume.pdf" class="hide-sm">Résumé</a>
+      <a class="pill sm" href="mailto:timwinchester16@gmail.com">Hire me</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <section class="cs-hero">
+    <p class="kicker">Case study — Snake identification &amp; venom safety</p>
+    <h1 class="display">Serpent</h1>
+    <p class="cs-summary">After a snake sighting or bite, a confident wrong answer can cost a life. So the app is allowed to say “Unknown”.</p>
+    <div class="cs-meta">
+      <div><h2>Role</h2><p>UI/UX design, front-end, AI integration</p></div>
+      <div><h2>Tools</h2><p>Figma, Next.js, TypeScript, Tailwind CSS</p></div>
+      <div><h2>Platform</h2><p>Web, mobile-first</p></div>
+      <div><h2>Links</h2><p><a href="https://serpent-zeta.vercel.app">Live</a> · <a href="https://github.com/thaw5808-arch/serpent">Code</a></p></div>
+    </div>
+  </section>
+  <section class="cs-media"><a class="frame reveal" href="https://serpent-zeta.vercel.app" style="display:block">
+    <span class="frame-bar"><span>serpent-zeta.vercel.app</span><span>Open live site ↗</span></span>
+    <img src="../assets/img/serpent.jpg" alt="Serpent home page" width="1000" height="625">
+  </a></section>
+
+  <section class="cs-split" aria-label="Problem and constraints">
+    <div class="reveal"><p class="kicker">The problem</p><p class="big">People who see a snake — or have just been bitten — often guess wrong about whether it’s dangerous. An app that guesses confidently can make that worse.</p></div>
+    <div class="reveal"><p class="kicker">What made it hard</p><ul><li>The user may be panicking, injured, or holding a phone in one hand</li><li>Photo quality is often poor, so the AI can be unsure</li><li>It has to work for English, Thai and Burmese speakers</li><li>Species names must stay searchable for doctors</li></ul></div>
+  </section>
+  <section aria-labelledby="dec"><p class="kicker" id="dec">Three decisions</p>
+  <div class="grid decisions-grid" style="padding-top:24px">
+    <article class="card reveal"><p class="step-no" aria-hidden="true">01</p><h3>Say “Unknown” instead of guessing</h3><p>One photo is compared against 4,245 species. If the match isn’t strong enough, the result says Unknown and points to safety advice — never false reassurance.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">02</p><h3>Emergency first, always one tap away</h3><p>A red “I’ve been bitten” button sits in the header on every page and opens a calm, step-by-step emergency flow.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">03</p><h3>Three languages, untranslated species names</h3><p>The interface works in English, Thai and Burmese, but scientific and common species names stay as they are, so they match what hospitals and searches use.</p></article>
+  </div>
+  </section>
+  <section aria-label="Proof" style="padding-top:clamp(56px,8vw,112px)"><div class="proof reveal">
+    <div><p class="num">4,245</p><p>species the app can compare against</p></div>
+    <div><p class="num">3</p><p>interface languages</p></div>
+    <div><p class="num">1 tap</p><p>to the emergency flow from any page</p></div>
+    <div><p class="num">Reused</p><p>my senior project team is building a mobile app on this design</p></div>
+  </div></section>
+  <section class="cs-split" aria-label="Stack and learnings">
+    <div class="reveal"><p class="kicker">What I learned</p><p>Designing for stress means removing choices, not adding them. Small details still matter — custom dropdowns for the species filters, and a viewfinder hover on the main button that hints at what it does — but the biggest design decision was what the app refuses to say.</p></div>
+    <div class="reveal"><p class="kicker">Built with</p><ul class="stack"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>PostgreSQL</li><li>OpenAI Vision</li><li>Swappable AI provider layer</li></ul></div>
+  </section>
+
+  <a class="next" href="marinerescue.html"><span class="kicker" style="margin:0">Next case study</span><span class="display">MarineRescue <span class="arrow" aria-hidden="true">→</span></span></a>
+  <p class="footnote">Tim · <a href="mailto:timwinchester16@gmail.com">timwinchester16@gmail.com</a> · <a href="https://github.com/thaw5808-arch">GitHub</a> · <a href="https://www.linkedin.com/in/thaw-zin-04751b3ba/">LinkedIn</a></p>
+</div>
+</main>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

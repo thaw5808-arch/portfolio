@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADORÉ — case study · Tim, UI/UX Designer</title>
+<meta name="description" content="How I designed and shipped ADORÉ, a pet adoption site that feels like meeting someone, not browsing a database.">
+<meta name="theme-color" content="#F1D9DC">
+<meta property="og:title" content="ADORÉ — case study by Tim">
+<meta property="og:description" content="How I designed and shipped ADORÉ, a pet adoption site that feels like meeting someone, not browsing a database.">
+<meta property="og:image" content="https://thaw5808-arch.github.io/portfolio/assets/img/adore-intro-3.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="t-adore" data-base="t-adore">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../#work"><span aria-hidden="true">←</span><span>All work <small>· 01 / 05</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../#about" class="hide-sm">About</a>
+      <a href="../assets/Tim-Thaw-Zin-Htut-UIUX-Resume.pdf" class="hide-sm">Résumé</a>
+      <a class="pill sm" href="mailto:timwinchester16@gmail.com">Hire me</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <section class="cs-hero">
+    <p class="kicker">Case study — Pet adoption web app</p>
+    <h1 class="display">Adoré</h1>
+    <p class="cs-summary">Adoption sites feel like shelter databases. I designed one that feels like meeting someone — then built it.</p>
+    <div class="cs-meta">
+      <div><h2>Role</h2><p>Solo — visual direction, UX, motion, prototype, front-end</p></div>
+      <div><h2>Tools</h2><p>Figma, Next.js 15, Tailwind CSS v4, GSAP ScrollTrigger</p></div>
+      <div><h2>Platform</h2><p>Web — desktop 1440 and mobile 393</p></div>
+      <div><h2>Links</h2><p><a href="https://adore-chi.vercel.app">Live</a> · <a href="https://www.figma.com/design/kx6JLfvjrV2pQC4YNvJOQC">Figma</a> · <a href="https://github.com/thaw5808-arch/adore">Code</a></p></div>
+    </div>
+  </section>
+  <section class="cs-media" aria-label="Intro videos">
+    <div class="media-row">
+      <figure class="frame reveal" style="margin:0">
+        <span class="frame-bar"><span>adore-chi.vercel.app</span><span>Desktop intro · 12s</span></span>
+        <video data-autoplay muted loop playsinline controls preload="metadata" poster="../assets/img/adore-intro-1.jpg" aria-label="ADORÉ desktop intro: the scroll-driven opening scene"><source src="../assets/video/adore-intro-desktop.mp4" type="video/mp4"></video>
+      </figure>
+      <figure class="phone reveal" style="margin:0">
+        <div class="phone-shell"><video data-autoplay muted loop playsinline controls preload="metadata" poster="../assets/img/adore-mobile-poster.jpg" aria-label="ADORÉ mobile intro"><source src="../assets/video/adore-intro-mobile.mp4" type="video/mp4"></video></div>
+        <figcaption class="caption">Mobile intro · 11s</figcaption>
+      </figure>
+    </div>
+    <p class="caption">Recorded from the live site. On the real page, the scene moves with your scroll.</p>
+  </section>
+
+  <section class="cs-split" aria-label="Problem and constraints">
+    <div class="reveal"><p class="kicker">The problem</p><p class="big">Most adoption sites are listings: filters, grids and a hundred faces at once. People scroll past before they connect with a single animal.</p></div>
+    <div class="reveal"><p class="kicker">What made it hard</p><ul><li>It had to feel warm and premium, never like a sad charity ad</li><li>The story had to work on a phone, with one thumb</li><li>People who already know what they want need a way to skip it</li><li>Figma can’t scrub an animation with the scroll wheel</li></ul></div>
+  </section>
+  <section aria-labelledby="dec"><p class="kicker" id="dec">Three decisions</p>
+  <div class="decision">
+    <div class="decision-copy reveal"><p class="step-no" aria-hidden="true">01</p><h3>Tell a story before showing a catalogue</h3><p>I tried six visual directions before choosing “Blush”: soft pinks with dark cocoa text. The opening is a seven-stage, scroll-driven scene — an empty house, a dog and a cat walk in, the light turns on — ending on “Every soul deserves a home.” A Skip intro button is always on screen.</p></div>
+    <figure class="frame reveal" style="margin:0"><img src="../assets/img/adore-intro-2.jpg" alt="Intro scene: a dog and a cat walking towards a house" loading="lazy"></figure>
+  </div>
+  <div class="decision">
+    <div class="decision-copy reveal"><p class="step-no" aria-hidden="true">02</p><h3>One face at a time</h3><p>Cards flip from the ADORÉ crest to a real pet as you scroll, so the first animal you meet gets your full attention instead of competing in a grid.</p></div>
+    <figure class="frame reveal" style="margin:0"><img src="../assets/img/adore-intro-4.jpg" alt="Pet cards flipping from the ADORÉ crest to real photos" loading="lazy"></figure>
+  </div>
+  <div class="decision">
+    <div class="decision-copy reveal"><p class="step-no" aria-hidden="true">03</p><h3>Profiles that read like an introduction</h3><p>Each pet gets a name, one personality line and only the facts that matter — age, size, breed, fee — plus who’s up next. A 16-step match quiz suggests which pet fits your home.</p></div>
+    <figure class="frame reveal" style="margin:0"><img src="../assets/img/adore-profile.jpg" alt="Pet profile for Pepper, a senior Pomeranian" loading="lazy"></figure>
+  </div>
+  </section>
+  <section aria-label="Proof" style="padding-top:clamp(56px,8vw,112px)"><div class="proof reveal">
+    <div><p class="num">80</p><p>Figma frames — every one clickable, desktop and mobile</p></div>
+    <div><p class="num">7</p><p>intro stages linked with Smart Animate</p></div>
+    <div><p class="num">16</p><p>match-quiz steps per platform</p></div>
+    <div><p class="num">6</p><p>visual directions explored before “Blush”</p></div>
+  </div></section>
+  <section class="cs-split" aria-label="Stack and learnings">
+    <div class="reveal"><p class="kicker">What I learned</p><p>Figma can’t tie motion to the scroll wheel, so I prototyped the intro as timed stages with Smart Animate and proved the real scroll motion in code with GSAP. Knowing where each tool stops — and picking the right one for each question — is part of the design job.</p></div>
+    <div class="reveal"><p class="kicker">Built with</p><ul class="stack"><li>Figma</li><li>Next.js 15</li><li>TypeScript</li><li>Tailwind CSS v4</li><li>GSAP</li><li>Prisma</li><li>PostgreSQL</li><li>Cloudinary</li><li>Upstash Redis</li><li>Vercel</li></ul></div>
+  </section>
+
+  <a class="next" href="serpent.html"><span class="kicker" style="margin:0">Next case study</span><span class="display">Serpent <span class="arrow" aria-hidden="true">→</span></span></a>
+  <p class="footnote">Tim · <a href="mailto:timwinchester16@gmail.com">timwinchester16@gmail.com</a> · <a href="https://github.com/thaw5808-arch">GitHub</a> · <a href="https://www.linkedin.com/in/thaw-zin-04751b3ba/">LinkedIn</a></p>
+</div>
+</main>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

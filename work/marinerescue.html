@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MarineRescue — case study · Tim, UI/UX Designer</title>
+<meta name="description" content="How I designed MarineRescue, a stranding report and response platform for Thailand&#x27;s coasts.">
+<meta name="theme-color" content="#DCE9E6">
+<meta property="og:title" content="MarineRescue — case study by Tim">
+<meta property="og:description" content="How I designed MarineRescue, a stranding report and response platform for Thailand&#x27;s coasts.">
+<meta property="og:image" content="https://thaw5808-arch.github.io/portfolio/assets/img/marinerescue.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="t-marine" data-base="t-marine">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../#work"><span aria-hidden="true">←</span><span>All work <small>· 03 / 05</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../#about" class="hide-sm">About</a>
+      <a href="../assets/Tim-Thaw-Zin-Htut-UIUX-Resume.pdf" class="hide-sm">Résumé</a>
+      <a class="pill sm" href="mailto:timwinchester16@gmail.com">Hire me</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <section class="cs-hero">
+    <p class="kicker">Case study — Marine wildlife stranding platform</p>
+    <h1 class="display">Marine<br>Rescue</h1>
+    <p class="cs-summary">When people find a stranded marine animal, they try to help — and often make it worse. The interface starts with the instruction.</p>
+    <div class="cs-meta">
+      <div><h2>Role</h2><p>UX, UI design, full-stack build</p></div>
+      <div><h2>Tools</h2><p>Figma, Next.js, TypeScript, Leaflet</p></div>
+      <div><h2>Platform</h2><p>Web, mobile-first for reporters</p></div>
+      <div><h2>Links</h2><p><a href="https://marinerescue-five.vercel.app">Live</a> · <a href="https://github.com/thaw5808-arch/marinerescue">Code</a></p></div>
+    </div>
+  </section>
+  <section class="cs-media"><a class="frame reveal" href="https://marinerescue-five.vercel.app" style="display:block">
+    <span class="frame-bar"><span>marinerescue-five.vercel.app</span><span>Open live site ↗</span></span>
+    <img src="../assets/img/marinerescue.jpg" alt="MarineRescue home page" width="1000" height="625">
+  </a></section>
+
+  <section class="cs-split" aria-label="Problem and constraints">
+    <div class="reveal"><p class="kicker">The problem</p><p class="big">People who find a stranded animal often try to move it, or don’t know who to tell. Every minute spent guessing is a minute rescuers lose.</p></div>
+    <div class="reveal"><p class="kicker">What made it hard</p><ul><li>Reporters are on a beach, outdoors, often stressed</li><li>Four very different users: reporters, coordinators, rescue teams, admins</li><li>Teams need to see new reports the moment they arrive</li><li>It’s a demo, so it must be honest that data is simulated</li></ul></div>
+  </section>
+  <section aria-labelledby="dec"><p class="kicker" id="dec">Three decisions</p>
+  <div class="grid decisions-grid" style="padding-top:24px">
+    <article class="card reveal"><p class="step-no" aria-hidden="true">01</p><h3>The headline is the instruction</h3><p>“Report it. Don’t move it.” sits right on the home page, followed by the two rules that matter: keep 45 metres back and keep people and pets away. Reporting is the main action.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">02</p><h3>One product, four views</h3><p>Role-based access gives reporters a simple form and status tracking, while coordinators, rescue teams and admins each see the tools for their job.</p></article>
+    <article class="card reveal"><p class="step-no" aria-hidden="true">03</p><h3>A live map instead of refreshing</h3><p>New reports appear on a shared map in real time over Server-Sent Events, so responders don’t have to reload to see what changed.</p></article>
+  </div>
+  </section>
+  <section aria-label="Proof" style="padding-top:clamp(56px,8vw,112px)"><div class="proof reveal">
+    <div><p class="num">4</p><p>user roles, each with its own view</p></div>
+    <div><p class="num">Live</p><p>map updates over Server-Sent Events</p></div>
+    <div><p class="num">axe</p><p>accessibility checks in the test suite</p></div>
+    <div><p class="num">3</p><p>test layers: Vitest, Playwright, axe</p></div>
+  </div></section>
+  <section class="cs-split" aria-label="Stack and learnings">
+    <div class="reveal"><p class="kicker">What I learned</p><p>Service design is mostly about who needs to know what, and when. A clear banner saying the data is simulated was also a design decision — being honest about what a product is builds more trust than polish.</p></div>
+    <div class="reveal"><p class="kicker">Built with</p><ul class="stack"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>Turso</li><li>Auth.js</li><li>Leaflet</li><li>Vitest</li><li>Playwright</li><li>axe</li></ul></div>
+  </section>
+
+  <a class="next" href="vesper.html"><span class="kicker" style="margin:0">Next case study</span><span class="display">Vesper <span class="arrow" aria-hidden="true">→</span></span></a>
+  <p class="footnote">Tim · <a href="mailto:timwinchester16@gmail.com">timwinchester16@gmail.com</a> · <a href="https://github.com/thaw5808-arch">GitHub</a> · <a href="https://www.linkedin.com/in/thaw-zin-04751b3ba/">LinkedIn</a></p>
+</div>
+</main>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
